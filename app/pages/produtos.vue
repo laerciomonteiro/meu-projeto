@@ -44,7 +44,6 @@ const produtos = ref([
   { id: 1, nome: 'Produto 1', preco: 19.99, descricao: 'Descrição do Produto 1' },
   { id: 2, nome: 'Produto 2', preco: 29.99, descricao: 'Descrição do Produto 2' },
   { id: 3, nome: 'Produto 3', preco: 39.99, descricao: 'Descrição do Produto 3' },
-  { id: 4, nome: 'Produto 4', preco: 49.99, descricao: 'Descrição do Produto 4' }
 ])
 
 // Filtro de pesquisa

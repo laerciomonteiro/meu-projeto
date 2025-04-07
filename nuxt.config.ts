@@ -13,5 +13,9 @@ export default defineNuxtConfig({
       routes: ['/'], // Rotas iniciais a serem pré-renderizadas
       ignore: ['**/*_payload.json'] // Ignora arquivos de payload
     }
+  },
+  app: {
+    pageTransition: { name: 'fade', mode: 'out-in' },
+    baseURL: '/meu-projeto/' // URL base para o aplicativo
   }
 })
