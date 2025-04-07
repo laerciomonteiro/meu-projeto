@@ -6,5 +6,12 @@ export default defineNuxtConfig({
   dir: {
     app: 'app'
   },
-  ssr: true
+  ssr: true,
+  nitro: {
+    prerender: {
+      crawlLinks: true, // Garante que todos os links sejam rastreados
+      routes: ['/'], // Rotas iniciais a serem pré-renderizadas
+      ignore: ['**/*_payload.json'] // Ignora arquivos de payload
+    }
+  }
 })
